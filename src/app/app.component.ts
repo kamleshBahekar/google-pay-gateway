@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'google-pay';
+  title = 'google-pay-demo';
+  
+  onLoadPaymentData(event:any) {
+    console.log("load payment data", event.detail);
+  }
 }
